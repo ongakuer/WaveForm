@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:title="@string/app_name"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <me.relex.widget.waveform.WaveFormView
+        android:id="@+id/wave_form_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        app:wf_time_label_color="@color/colorAccent"
+        app:wf_time_label_height="8dp"
+        app:wf_time_label_min_space="24dp"
+        app:wf_time_label_width="1dp"
+        app:wf_time_text_color="@color/colorAccent"
+        app:wf_time_text_size="10sp"
+        app:wf_waveform_color="@color/colorPrimaryDark"
+        app:wf_waveform_max_scale="3"/>
+
+    <me.relex.widget.waveform.WaveFormThumbView
+        android:id="@+id/wave_form_thumb_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/colorPrimary"
+        app:wf_waveform_color="@color/colorPrimaryDark"
+        app:wf_waveform_highlight_color="@color/colorAccent"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
